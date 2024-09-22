@@ -335,26 +335,7 @@ def windows():
     C=f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2','1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12,42)))}.0.{str(random.choice(range(742,2200)))}.{str(random.choice(range(1,120)))} Safari/{cz}"
     D=f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.{str(random.choice(range(1,7120)))}.0 Safari/537.36"
     return random.choice([A,B,C,D])
-#-------------------// APPROVAL \\---------------------#
-import os,httpx
-sexkey = "44D191DC3004442DA951AFAD603F81B8FE9B56"
-def approval():
-    sexkey = "44D191DC3004442DA951AFAD603F81B8FE9B56"
-    ress=httpx.get("https://github.com/1RIFIN-70/CONTROL-ROM/blob/main/Permission.txt").text
-    if sexkey in ress:
-        menu()
-    else:
-        print("\x1b[38;5;244m KEY IS NOT APPROVED")
-        os.system("clear")
-        print(logo)
-        
-        print("\x1b[1;96m < !!...FAST APROVE YOUR KEY...!! > ")
-        print("\x1b[1;96m44D191DC3004442DA951AFAD603F81B8FE9B56")
-        print('\x1b[1;97m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m')
-        input(f'\x1b[38;5;244m(\x1b[1;97m+\x1b[38;5;244m)\x1b[1;96m PRESS ENTER TO SEND KEY ADMIN > ')
-        time.sleep(2)
-        tks = sexkey
-       #-- os.system('xdg-open https://wa.me/+8801857365275')
+
 #__________________| LOGO |__________________#
 logo=(f"""\x1b[1;92m
  _     _ _______ _     _ _______ _____
